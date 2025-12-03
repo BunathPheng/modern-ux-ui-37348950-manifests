@@ -1,0 +1,25 @@
+---
+# Source: helm for kubernetes/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: modern-ux-ui-37348950
+  labels:
+    app: modern-ux-ui-37348950
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: modern-ux-ui-37348950
+  template:
+    metadata:
+      labels:
+        app: modern-ux-ui-37348950
+    spec:
+      containers:
+        - name: modern-ux-ui-37348950
+          image: docker.io/phengbunath/modern-ux-ui-37348950:1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
