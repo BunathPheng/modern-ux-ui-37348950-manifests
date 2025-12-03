@@ -18,4 +18,4 @@ spec:
               service:
                 name: modern-ux-ui-37348950               # Links to Service name dynamically
                 port:
-                  number: 8080  # Links to service port dynamically
+                  number: 3000  # Links to service port dynamically
